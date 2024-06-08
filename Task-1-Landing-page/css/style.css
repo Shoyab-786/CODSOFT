@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: white;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 150px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.navRight {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navRight select {
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.23);
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 2px 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.navRight select option {
+    background: #000;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn {
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 80px;
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 60%);
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:hover {
+    transform: scale(0.97);
+    background: linear-gradient(to right, #bc6501 0%, #983334 60%);
+}
+
+.sec {
+    min-height: 99vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.cover {
+    min-height: 99vh;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.line {
+    background: rgb(69, 67, 67);
+    height: 8px;
+}
+
+.content {
+    padding: 10px 150px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.content p {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+}
+
+.hero .content {
+    text-align: center;
+}
+
+.hero_title {
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.hero_title span {
+    font-weight: 700;
+    display: block;
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 60%, black 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.btn_join {
+    height: 60px;
+    width: 150px;
+    padding: 10px;
+}
+
+.explore {
+    background-image: url(../img/concert.jpg);
+}
+
+.explore .cover {
+    background: rgba(0, 0, 0, 0.80);
+}
+
+.sec_content {
+    text-align: center;
+    gap: 20px;
+}
+
+.sec_title {
+    margin: auto;
+    font-size: 3.5rem;
+    position: relative;
+}
+
+.sec_title::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: '';
+    height: 3px;
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 60%)
+}
+
+
+.explore_grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    width: 200px;
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 60%);
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: linear-gradient(to right, #bc6501 0%, #983334 60%);
+    transform: scale(0.98);
+}
+
+.card i {
+    font-size: 2rem;
+}
+
+
+.card_title {
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+.app {
+    background-image: url(../img/asthetic.jpg);
+}
+
+.app .cover {
+    background: rgba(0, 0, 0, 0.55);
+}
+.app_content span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 60%, black 100%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.app_grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.app_grid .card {
+    margin: 0;
+}
+
+.faqs {
+    background-image: url(../img/faqs.jpg);
+}
+
+.faqs_content {
+    display: block;
+    min-height: 600px;
+    overflow-y: scroll;
+}
+
+.faqs_content::-webkit-scrollbar {
+    display: none;
+}
+
+.faqs h1 {
+    width: 200px;
+    overflow: hidden;
+}
+
+.accordion {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.accordion_card {
+    margin: 10px 0px;
+}
+
+
+.accordion_title {
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion_title:hover {
+    background: #414141;
+}
+
+.faqs_icon {
+    font-size: 3rem;
+}
+
+.accordion_content {
+    margin-top: 2px;
+    border-radius: 5px;
+    background: #2e2e2e;
+    display: none;
+    transition: 0.3s;
+}
+
+.show {
+    display: block;
+}
+
+.show p {
+    padding: 15px 20px;
+}
+
+.cross {
+    transform: rotate(45deg);
+}
+
+.accordion_content p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+footer {
+    color: white;
+    background: #000;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 1.5rem;
+}
